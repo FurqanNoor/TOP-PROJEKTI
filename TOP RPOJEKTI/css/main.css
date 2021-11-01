@@ -1,0 +1,113 @@
+body{
+    background-image: url("../pictures/background.jpg");
+    background-size: cover;
+    overflow: hidden; 
+}
+.taskbar{
+    border: 5px solid #3f87ec;
+    margin-top: 680px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    width: 1550px;
+    height: 40px;
+    background-color: #2157d4;
+}
+.startbox{
+    border: 5px solid #2c9427;
+    background-color: #3fa141;
+    border-radius: 20px;
+    margin-top: -5px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+    width: 150px;
+    height: 40px;
+}
+img{
+    margin-top: 5px;
+    margin-left: 15px;
+    max-width: 35px;
+    max-height: 30px;
+}
+p{
+    margin-top: -34px;
+    margin-left: 65px;
+    font-size: 25px;
+    font-family: Tahoma;
+    color: white;
+}
+a{
+    color: transparent;
+}
+.wrapper{
+    height: 100%;
+    width: 300px;
+    position: relative;
+  }
+  .wrapper .menu-btn{
+    margin-top: -10px;
+    margin-left: -30px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background: transparent;
+    height: 50px;
+    width: 150px;
+    z-index: 9999;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  #btn:checked ~ .menu-btn{
+    margin-top: -10px;
+    left: 20px;
+    background: transparent;
+  }
+  .wrapper .menu-btn i{
+    position: absolute;
+    transform: ;
+    font-size: 23px;
+    transition: all 0.3s ease;
+  }
+  .wrapper .menu-btn i.fa-times{
+    opacity: 0;
+  }
+  #btn:checked ~ .menu-btn i.fa-times{
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+  #btn:checked ~ .menu-btn i.fa-bars{
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  #sidebar{
+    border-radius: 10px;
+    margin-top: -515px;
+    position: fixed;
+    background-image:linear-gradient(#d2e5f9, #fefefe );
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    left: -400px;
+    transition: all 0.3s ease;
+  }
+  #btn:checked ~ #sidebar{
+    left: 0;
+  }
+  #sidebar .title{
+    line-height: 65px;
+    text-align: center;
+    background-image:linear-gradient(#3f87ec,#2157d4);
+    font-size: 25px;
+    font-weight: 100;
+    color: white;
+    font-family: Tahoma;
+    border-bottom: 1px solid #222;
+  }
+  #sidebar .sidebarboxtwo{
+    background-image:linear-gradient(#3f87ec,#2157d4);
+    margin-top: 384px;
+    width: 400px;
+    height: 50px;
