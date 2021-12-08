@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snake-peli</title>
+
+  <style>
+    body {
+      background-image: url(./snake.jpg);
+      background-size: cover;
+      overflow:hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    #game-board {
+      background: linear-gradient(rgb(101, 122, 3), rgb(184,212,69));
+      border: 1vmin solid black;
+      box-sizing: content-box;
+      overflow:hidden;
+      width: 90vmin;  
+      height: 90vmin;
+      display: grid;
+      grid-template-rows: repeat(21, 1fr);
+      grid-template-columns: repeat(21, 1fr);
+    }
+
+    .snake {
+      background-color:red;
+      border: .25vmin solid black;
+    }
+
+    .food {
+      background-color:yellow;
+      border: .25vmin solid black;
+    }
+  </style>
+
+  <script src="game.js" defer type="module"></script>
+</head>
+
+<body>
+  <div id="game-board"></div>
+</body>
